@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'guide',
+        'NAME': 'pychatt',
         'USER': 'unix',
         'PASSWORD': 'unix',
         'HOST': '127.0.0.1',
