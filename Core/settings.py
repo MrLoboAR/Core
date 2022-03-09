@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'Core',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,7 @@ DATABASES = {
         'NAME': os.environ.get('DBName'),
         'USER': os.environ.get('DBUser'),
         'PASSWORD': os.environ.get('DBPass'),
-        'HOST': '127.0.0.1',
+        'HOST': os.environ.get('DBHost'),
         'PORT': os.environ.get('DBPort'),
     }
 }
