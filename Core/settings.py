@@ -102,9 +102,11 @@ LANGUAGE_CODE = 'es-mx'
 
 TIME_ZONE = 'America/Mexico_City'
 
-USE_I18N = True
+USE_I18N = False
 
-USE_L10N = True
+DATETIME_FORMAT = '%d-%m-%Y %H:%M' 
+DATE_INPUT_FORMATS = '%d %b, %Y  %H:%M' 
+USE_L10N = False
 
 USE_TZ = True
 
