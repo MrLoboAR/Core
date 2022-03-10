@@ -1,2 +1,14 @@
-<h1> POSTED BLOGS </h1>
+<h1 align="center"> POSTED BLOGS </h1>
+<hr>
 <a href={% url 'blog:create' %}>Create Shitpost</a>
+<hr>
+{% for post in posts %}
+<h3>{{post.title}}</h3><br>
+{{post.content}}<br>
+<p>Published: {{post.created_at}}</p>
+<br>
+<a href={% url 'blog:shitpost' post.id %} target='blank'> Read Complete </a>
+<a href= {% url 'blog:update' post.id %}>Edit This Shitt </a>
+<a href= {% url 'blog:dump' post.id %}> Delete This SHITPOST NOW</a>
+<hr>
+{% endfor %}

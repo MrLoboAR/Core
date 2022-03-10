@@ -16,6 +16,7 @@ DEBUG = os.environ.get('DEBUG')
 ALLOWED_HOSTS = ['*',]
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -28,7 +29,10 @@ INSTALLED_APPS = [
 
     'Core',
     'blog',
+
+    
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -104,7 +108,7 @@ TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = False
 
-DATETIME_FORMAT = '%d-%m-%Y %H:%M' 
+DATETIME_FORMAT = 'd - m - Y | H:m' 
 DATE_INPUT_FORMATS = '%d %b, %Y  %H:%M' 
 USE_L10N = False
 

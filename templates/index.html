@@ -1,2 +1,6 @@
-<h1>LA MEJOR PAGINA DEL MUNDO MUNDIAL WEB WEB</H1>
-<a target='blank' href="{% url 'blog:home' %}">Blogg</a>
+{% extends 'base.html' %}
+{% block content %}
+    <h1>LA MEJOR PAGINA DEL MUNDO MUNDIAL WEB WEB</H1>
+    <a target='blank' href="{% url 'blog:home' %}">Blogg</a>
+
+{% endblock content %}
