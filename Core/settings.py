@@ -104,7 +104,7 @@ TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = False
 
-DATETIME_FORMAT = '%d-%m-%Y %H:%M' 
+DATETIME_FORMAT = 'd - m - Y | H:m' 
 DATE_INPUT_FORMATS = '%d %b, %Y  %H:%M' 
 USE_L10N = False
 

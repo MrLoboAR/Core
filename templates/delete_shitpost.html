@@ -1,0 +1,9 @@
+<h1 align=center> Send TO TRASHH DUMP SITEEE </h1>
+<hr>
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <h3>{{post.title}}</h3>
+    <p> Posted Date {{post.created_at}}</p> 
+    <button type='submit'> Delete This ShitPostt</button>
+</form>
