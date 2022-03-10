@@ -16,6 +16,7 @@ DEBUG = os.environ.get('DEBUG')
 ALLOWED_HOSTS = ['*',]
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -28,7 +29,10 @@ INSTALLED_APPS = [
 
     'Core',
     'blog',
+
+    
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
